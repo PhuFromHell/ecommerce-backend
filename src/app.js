@@ -11,14 +11,14 @@ app.use(helmet())
 app.use(compression())
 
 // init db
-
+require('./dbs/init.mongodb')
 
 // init routers
 app.get('/', (req, res, next) => {
     const strCompress = 'wellcome fantipjs'
     return res.status(200).json({
         message: 'wellcome fantipjs',
-        metadata: strCompress.repeat(1000000)
+        metadata: strCompress.repeat(10000)
     })
 })
 
