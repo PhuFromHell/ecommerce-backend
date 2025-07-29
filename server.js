@@ -3,7 +3,7 @@ const app = require("./src/app");
 const PORT = 3055
 
 const server  = app.listen(PORT, () => {
-    console.log(`ecomerce start width port: ${PORT}`)
+    console.log(`Ecomerce start width port: ${PORT}`)
 })
 
 

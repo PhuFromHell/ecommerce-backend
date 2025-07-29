@@ -15,9 +15,9 @@ require('./dbs/init.mongodb')
 
 // init routers
 app.get('/', (req, res, next) => {
-    const strCompress = 'wellcome fantipjs'
+    const strCompress = 'Wellcome fantipjs'
     return res.status(200).json({
-        message: 'wellcome fantipjs',
+        message: 'Wellcome fantipjs',
         metadata: strCompress.repeat(10000)
     })
 })
